@@ -1,0 +1,81 @@
+\documentclass[sigconf, 12pt]{acmart}
+
+\usepackage{enumitem}
+\usepackage{dirtytalk}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\citestyle{acmauthoryear}
+
+\title[CS205 Paper 3]{The Ethics of generative AI}
+
+\author{Edgar Jose Donoso Mansilla}
+\email{e.donosomansilla@digipen.edu}
+\affiliation{
+	\institution{DigiPen Institute of Technology}
+	\country{USA}
+}
+
+\begin{document}
+\include{src/code-style}
+
+\maketitle
+
+\section{Background Information}
+
+\subsection{Core Issue}
+This paper will focus on the integration of generative AI in the field of software engineering. There will be 3 key focuses here when it comes down to it's use:
+\begin{itemize}
+	\item{Displacement of populations}
+	\item{Software safety}
+	\item{Effects on proprietary and open source software}
+\end{itemize}
+
+\subsection{Stakeholders}
+\begin{itemize}
+	\item{General population}
+	\item{Software engineers}
+	\item{Companies that use generative AI}
+	\item{Companies that make generative AI tools}
+\end{itemize}
+
+\section{Current state of generative AI}
+This section will focus on the core applications and issues that generative AI is undergoing:
+
+Applications:
+\begin{itemize}
+	\item{Usage in research}
+	\item{Vibe coding}
+	\item{Usage in open source projects}
+	\item{Data privacy}
+\end{itemize}
+
+Issues:
+\begin{itemize}
+	\item{The ethics of training it on codebases without the creator's explicit approval}
+	\item{Hallucinations: The system's inability to tell you that it doesn't know something}
+	\item{The "bubble": The financial risks associated with running such an expensive business}
+	\item{Population displacement: The space and resources needed to have the compute centers}
+	\item{Unreliability: Leaks and the such}
+\end{itemize}
+
+\section{Technical Background}
+The technical section will focus on the following:
+\begin{itemize}
+	\item{The math of the models}
+	\item{Code generation models and what extra features they implement to ensure correct code}
+	\item{}
+\end{itemize}
+
+\section{Ethical Analysis}
+
+\section{Conclusion}
+
+\section{Beyond the surface}
+
+\onecolumn
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+
+\end{document}
