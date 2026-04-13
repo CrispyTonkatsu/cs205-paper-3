@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/nixos.org) (preloaded format=pdflatex 1980.1.1)  13 APR 2026 14:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/nixos.org) (preloaded format=pdflatex 1980.1.1)  13 APR 2026 14:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1000,59 +1000,69 @@ LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 (Font)              scaled to size 8.0pt on input line 20.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 (Font)              scaled to size 6.1pt on input line 20.
+
+Overfull \hbox (4.28938pt too wide) in paragraph at lines 20--20
+\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) USA, []3[] pages. []$https : / / doi . org / 10 . 1145 / nnnnnnn . nnnnnnn$[] 
+ []
+
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 22.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 17.28pt on input line 22.
- (./src/background-information.tex
+(./src/background-information.tex
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 12.0pt on input line 5.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 6.
+(Font)              scaled to size 12.0pt on input line 12.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.8pt on input line 6.
+(Font)              scaled to size 8.8pt on input line 12.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.6pt on input line 6.
+(Font)              scaled to size 6.6pt on input line 12.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 12.0pt on input line 6.
+(Font)              scaled to size 12.0pt on input line 12.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 8.8pt on input line 6.
+(Font)              scaled to size 8.8pt on input line 12.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 6.6pt on input line 6.
+(Font)              scaled to size 6.6pt on input line 12.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 12.0pt on input line 6.
+(Font)              scaled to size 12.0pt on input line 12.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.8pt on input line 6.
+(Font)              scaled to size 8.8pt on input line 12.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.6pt on input line 6.
+(Font)              scaled to size 6.6pt on input line 12.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 12.0pt on input line 6.
+(Font)              scaled to size 12.0pt on input line 12.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.8pt on input line 6.
+(Font)              scaled to size 8.8pt on input line 12.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.6pt on input line 6.
+(Font)              scaled to size 6.6pt on input line 12.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 12.0pt on input line 6.
+(Font)              scaled to size 12.0pt on input line 12.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.8pt on input line 6.
+(Font)              scaled to size 8.8pt on input line 12.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.6pt on input line 6.
+(Font)              scaled to size 6.6pt on input line 12.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 12.0pt on input line 6.
+(Font)              scaled to size 12.0pt on input line 12.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.8pt on input line 6.
+(Font)              scaled to size 8.8pt on input line 12.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.6pt on input line 6.
+(Font)              scaled to size 6.6pt on input line 12.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 12.0pt on input line 6.
+(Font)              scaled to size 12.0pt on input line 12.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.8pt on input line 6.
+(Font)              scaled to size 8.8pt on input line 12.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.6pt on input line 6.
+(Font)              scaled to size 6.6pt on input line 12.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 12.0pt on input line 6.
+(Font)              scaled to size 12.0pt on input line 12.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.8pt on input line 6.
+(Font)              scaled to size 8.8pt on input line 12.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.6pt on input line 6.
+(Font)              scaled to size 6.6pt on input line 12.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 Package fancyhdr Warning: \headheight is too small (13.0pt): 
@@ -1072,7 +1082,7 @@ Package fancyhdr Warning: \footskip is too small (12.0pt):
 
 
 {/nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/enc/dvips/libertine/lbtn_naooyc.enc}]) (./src/technical-information.tex) (./src/ethical-analysis.tex
-Underfull \vbox (badness 2573) has occurred while \output is active []
+Underfull \vbox (badness 3354) has occurred while \output is active []
 
 ) (./src/conclusion.tex)
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
@@ -1109,21 +1119,21 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1533E0C57019476C7A7A3F3D8067B500;2078.
+(rerunfilecheck)             Checksum: A6C20EBF4C58A9AEA80CCE41E3DAA7E6;2463.
  ) 
 Here is how much of TeX's memory you used:
- 22866 strings out of 467535
- 378307 string characters out of 5397134
- 849189 words of memory out of 5000000
- 50933 multiletter control sequences out of 15000+600000
- 785644 words of font info for 329 fonts, out of 8000000 for 9000
+ 22870 strings out of 467535
+ 378398 string characters out of 5397134
+ 846919 words of memory out of 5000000
+ 50937 multiletter control sequences out of 15000+600000
+ 790757 words of font info for 327 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 90i,12n,131p,1001b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,12n,131p,1001b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/type1/public/libertine/LinBiolinumT.pfb></nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/type1/public/libertine/LinBiolinumTB.pfb></nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/type1/public/libertine/LinLibertineT.pfb></nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/type1/public/libertine/LinLibertineTB.pfb></nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/type1/public/libertine/LinLibertineTI.pfb></nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (3 pages, 378167 bytes).
+Output written on main.pdf (3 pages, 378872 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
- 20 named destinations out of 1000 (max. 500000)
- 82049 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 141 PDF objects out of 1000 (max. 8388607)
+ 117 compressed objects within 2 object streams
+ 22 named destinations out of 1000 (max. 500000)
+ 86161 words of extra memory for PDF output out of 89155 (max. 10000000)
 

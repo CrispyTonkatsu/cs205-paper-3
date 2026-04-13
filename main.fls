@@ -409,6 +409,7 @@ INPUT ./src/background-information.tex
 INPUT ./src/background-information.tex
 INPUT ./src/background-information.tex
 INPUT src/background-information.tex
+INPUT /nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1.tfm
 INPUT /nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1.tfm
 INPUT /nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1.tfm
 INPUT /nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1.tfm
@@ -467,6 +468,8 @@ INPUT /nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/
 INPUT /nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/vf/public/libertine/LinLibertineT-tlf-ts1.vf
 INPUT /nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/tfm/public/libertine/LinLibertineT-tlf-ts1--base.tfm
 INPUT /nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/enc/dvips/libertine/lbtn_naooyc.enc
+INPUT /nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/vf/public/libertine/LinLibertineTI-tlf-t1.vf
+INPUT /nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1--base.tfm
 INPUT /nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/vf/public/newtx/ntxsy.vf
 INPUT /nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/tfm/public/newtx/txsys.tfm
 INPUT /nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/tfm/public/newtx/txex-bar.tfm
