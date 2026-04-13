@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1776113738.90967 "main.aux" "main.bbl" "main" 1776113818.32147 0
+["bibtex main"] 1776114834.39622 "main.aux" "main.bbl" "main" 1776114835.11781 0
   "./references.bib" 1776113728.14646 766 06a9f1ddfeaf521b0814fef6dae25377 ""
   "/nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/bibtex/bst/acmart/ACM-Reference-Format.bst" 1 93560 12e0ced1522ea2bfa9b2fb12855c7e9e ""
-  "main.aux" 1776113818.15424 2212 794310ddfd36b9c54de380b88377043c "pdflatex"
-  "src/code-style.aux" 1776113818.01824 971 ad2ae54da7e98fbe81b4eb3b016d9aac "pdflatex"
+  "main.aux" 1776114834.95207 2212 794310ddfd36b9c54de380b88377043c "pdflatex"
+  "src/code-style.aux" 1776114834.81307 971 ad2ae54da7e98fbe81b4eb3b016d9aac "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1776113817.65639 "main.tex" "main.pdf" "main" 1776113818.32158 0
+["pdflatex"] 1776114834.45245 "main.tex" "main.pdf" "main" 1776114835.11795 0
   "/nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/enc/dvips/libertine/lbtn_25tcsq.enc" 1 2921 8ca0eb0831f9bc5da080d3697cfe67bf ""
   "/nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/enc/dvips/libertine/lbtn_76gpa5.enc" 1 2933 9ad527ce78d7c5fa0a642dead095f172 ""
   "/nix/store/10phrhvgxyw4aj6dqdda4hlv2fc7xh66-texlive-2025-r77567-env/fonts/enc/dvips/libertine/lbtn_7grukw.enc" 1 2934 a4a9158faed2e9e89c771b4e3b7fc12f ""
@@ -182,12 +182,16 @@
   "/nix/store/d4pm16gh9k3zi16is2wn6pchkhn15f6n-texlive-2025-r77567-env/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1 5541477 c75389f3ecff9a88494177b3a0077268 ""
   "/nix/store/d4pm16gh9k3zi16is2wn6pchkhn15f6n-texlive-2025-r77567-env/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1 3636945 71124b03f5b8f0a02c631a3299d6ad80 ""
   "/nix/store/d4pm16gh9k3zi16is2wn6pchkhn15f6n-texlive-2025-r77567-env/share/texmf-var/web2c/texmf.cnf" 1 44061 7baf0b50b984dfb59e9e48a04e58adf8 ""
-  "main.aux" 1776113818.15424 2212 794310ddfd36b9c54de380b88377043c "pdflatex"
-  "main.bbl" 1776113738.95155 2439 f9dbd760db51bf2717b5bf76dff78448 "bibtex main"
-  "main.out" 1776113818.15424 2078 1533e0c57019476c7a7a3f3d8067b500 "pdflatex"
-  "main.tex" 1776113817.9743 4081 9797ae4c2245b17d1c24e5590cb87189 ""
-  "src/code-style.aux" 1776113818.01824 971 ad2ae54da7e98fbe81b4eb3b016d9aac "pdflatex"
+  "main.aux" 1776114834.95207 2212 794310ddfd36b9c54de380b88377043c "pdflatex"
+  "main.bbl" 1776114834.44807 2439 f9dbd760db51bf2717b5bf76dff78448 "bibtex main"
+  "main.out" 1776114834.95207 2078 1533e0c57019476c7a7a3f3d8067b500 "pdflatex"
+  "main.tex" 1776114834.50407 1678 5841ef5742e8d6250ec7446ee3eced9d ""
+  "src/background-information.tex" 1776114739.02038 1311 b8f61cdcc0bafff53b6f3ae262dad255 ""
+  "src/code-style.aux" 1776114834.81307 971 ad2ae54da7e98fbe81b4eb3b016d9aac "pdflatex"
   "src/code-style.tex" 1775667578.87618 643 1d042743b05489c80c99c633c6087e1e ""
+  "src/conclusion.tex" 1776114828.79195 52 160479b12cd10a50004dd1c286af7306 ""
+  "src/ethical-analysis.tex" 1776114803.74885 1092 936c93ff66d6237b1ce2da1209bc7dd2 ""
+  "src/technical-information.tex" 1776114776.60765 301 fc364993787037f12c76f783027e157c ""
   (generated)
   "main.aux"
   "main.log"
