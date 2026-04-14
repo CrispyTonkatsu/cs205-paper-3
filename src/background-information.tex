@@ -2,37 +2,52 @@
 As discussed in the introduction, there are several concerns with the use of generative AI in software development:
 
 \subsection{Software reliability}
-One of the major issues that stems from using GenAI is the fact that GenAI doesn't \textit{reason} like humans do. Unlike humans that %% TODO: left off here
+One of the major issues that stems from using GenAI is the fact that GenAI doesn't \textit{reason} like humans do given its answer is generated via approximating using other good answers in the source. Programming is a task that requires discrete reasoning as the steps will directly relate to the next one in the solution \cite{reasoning-ai}. This causes several issues when it comes down to the reliability of the software being written with the help of GenAI \cite{code-correctness}:
+\begin{itemize}
+	\item{Mistakes might be missed when generating large amounts of code.}
+	\item{Engineers can't guarantee where the design patters that were used to generate the system.}
+	\item{Maintaining the systems will become more difficult over time as they were mainly written by GenAI as opposed to a human who had a stream of logic that was followed when designing the system.}
+\end{itemize}
 
+These issues are more prominent when the software with generated code has critical importance such as a pacemaker, airplane cruising modes, etc. This issue compounds with GenAI's tendency to "hallucinate" an answer as its model might have biases and over fitting which make the math converge to a wrong answer \cite{hallucinations-ibm}.
 
 \subsection{Dilution of knowledge}
-\subsection{Displacement of populations}
+Another major issue with GenAI for software engineering is the fact that they reduce the spaces where less experienced engineers build the knowledge to move forward. As stated before, GenAI doesn't reason and this is a similar issue with less experienced engineers, however, the key difference is that human engineers can improve with time and build up the discrete reasoning which allows them to construct correct programs that they haven't seen before. \cite{jobs-stack-overflow}
+
+\subsection{Displacement of people}
+This is a more general issue with the usage of GenAI but applies heavily to expensive tasks like generating the code for a complex program. The infrastructure that GenAI needs is costly in several resources \cite{electricity-use} \& \cite{water-use}:
+
+\begin{itemize}
+	\item{About 22\% power of all households in the US.}
+	\item{\say{Chan School of Public Health found that the carbon intensity of electricity used by data centers was 48\% higher than the US average.}}
+	\item{\say{Large data centers can consume up to 5 million gallons per day, equivalent to the water use of a town populated by 10,000 to 50,000 people.}}
+\end{itemize}
+
+Not only are data centers resource expensive, they also need a lot of space. This has caused local communities to be affected by the pollution and price increase of utilities. Not only that but there are cases where people lose the green areas of their community to a company who was able to buy out the land \cite{people-displacement}.
 
 \section{Stakeholders}
-\begin{itemize}
-	\item{General population}
+With the core issues of GenAI out of the way, these are a possible classification of the different stakeholders in the situation (in order of least to most benefited):
+
+\begin{enumerate}
+	\item{General population in developing countries}
+	\item{General population in developed countries}
 	\item{Software engineers}
 	\item{Companies that use generative AI}
 	\item{Companies that make generative AI tools}
-\end{itemize}
+\end{enumerate}
 
 \section{Current state of generative AI}
-This section will focus on the core applications and issues that generative AI is undergoing:
+With understanding of the costs of this technology it is also important to acknowledge its usage. By understanding the applications of the technology, it will be possible to weigh out the benefits and disadvantages of spending resources on this technology.
 
-Applications:
-\begin{itemize}
-	\item{Usage in research}
-	\item{Vibe coding}
-	\item{Usage in open source projects}
-	\item{Usage in proprietary projects}
-	\item{Data privacy}
-\end{itemize}
+\subsection{Vibe Coding}
+This no-code development experience differs from the professional world of software engineering where the tools are understood. This really doesn't have a major impact in the infrastructure of larger software but it does use all the same resources that other projects would use to improve their products \cite{vibe-coding}.
 
-Issues:
-\begin{itemize}
-	\item{The ethics of training it on codebases without the creator's explicit approval}
-	\item{Hallucinations: The system's inability to tell you that it doesn't know something}
-	\item{The "bubble": The financial risks associated with running such an expensive business}
-	\item{Population displacement: The space and resources needed to have the compute centers}
-	\item{Unreliability: Leaks and the such}
-\end{itemize}
+\subsection{Usage in research}
+There's been a shift in academia to use more GenAI to speed up different elements of the research pipeline \cite{academia-ai}. A key project that will be mentioned in this essay is the usage to create the implementation for the ZOZO's (a Japanese clothing company) cloth physics solver \cite{ppf-solver}.
+
+\subsection{Usage in open source}
+In open source projects there is a current issue where the lead contributors are being swarmed by pull requests with low quality AI generated code \cite{open-source-bother}. This puts a strain in projects' ability to survive as the leads are often people who volunteer and don't have the time to go through all the low quality code to pick out and accept contributions to the project.
+
+\subsection{Usage in private companies}
+
+
