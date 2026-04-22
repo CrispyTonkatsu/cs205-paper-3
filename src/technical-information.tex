@@ -32,7 +32,9 @@ $$
 This method is used for steps 2 and 3 in figure \ref{Gradient-Descent} as it will calculate the direction to move the weights and biases and move there. This process is repeated until the change in error between iterations is less than desired \cite{gradient-descent}. While this only adjusts the weights, there still needs to be a process of back-propagation. This involved finding which parameters affect the output the most and then adjusting the values to cover the edge cases left after the gradient descent is done \footnote{The math of this algorithm is more complex therefore it will not be explored in depth for this essay} \cite{backpropagation}.
 
 \subsection{Large Language Models}
-A large language model is a form of generative AI which utilizes the encoded relationships from machine learning to produce new content based on a word input.
+Large Language Models (LLMs) are models that are trained on natural and computer language in order to be able to generate an output based on verbal (text and/or audio) input. These models use the relationships encoded with machine learning to output next most likely word in the output.
+
+% TODO: Left off here finishing this section using the 3b1b content
 
 \subsection{Architecture of GenAI coding tools}
 When utilizing generative AI in the context of a software project, there are additional considerations that must be met to meet the desired output. To better understand this fine tuning, this essay will focus on Claude Code's approach as a case study.
@@ -45,4 +47,4 @@ When utilizing generative AI in the context of a software project, there are add
 
 When a developer prompts a Claude Code, the tool will start by gathering context of the problem. This involves analyzing the codebase for relevant symbols and classes that are needed to complete the required prompt. Then the tool will execute actions such as generating text or code. Lastly, because Claude has permissions to interact with the terminal, it will try to verify the results by either compiling the code, running the code and verifying any output produced by the program \cite{claude}.
 
-While not all developers directly allow GenAI tools to access their codebase, this is the most effective at producing responses as it is able to gather more information and test the generated content.
+While not all developers directly allow GenAI tools to access their codebase like in figure \ref{Claude-Agentic-Loop}, this is the most effective at producing responses as it is able to gather more information and test the generated content.
