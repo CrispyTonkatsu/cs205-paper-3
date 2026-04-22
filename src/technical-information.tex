@@ -1,9 +1,23 @@
 \section{Technical Background}
-The technical section will focus on the following:
-\begin{itemize}
-	\item{The math of the models}
-	\item{LLMs and how they work}
-	\item{Code generation models and what extra features they implement to ensure correct code}
-	\item{Why hallucinations occur}
-\end{itemize}
+There are several moving pieces in the development of code GenAI models: machine learning, Large Language Models (LLMs), LLMs in code.
 
+\subsection{Machine learning}
+Machine learning is a subset of artificial intelligence that uses statistical inference to adapt responses based on previous and new knowledge. This is a very powerful type of program as it provides adaptability at no code architecture change, however, these systems improve drastically the more data they have available and have analyzed. To achieve this functionality a ML model must first be trained \cite{IBM-MachineLearningTypes}.
+
+The training process involves iteratively feeding data to the mathematical model that represents the black box of relationships between the data. This data will contain labels and information such that the model itself or humans can verify the output it generates and improve the relationships stored in the mathematical models \cite{IBM-MachineLearningTypes}.
+
+\subsection{Large Language Models}
+A large language model is a form of generative AI which utilizes the encoded relationships from machine learning to produce new content based on a word input.
+
+\subsection{Architecture of GenAI coding tools}
+When utilizing generative AI in the context of a software project, there are additional considerations that must be met to meet the desired output. To better understand this fine tuning, this essay will focus on Claude Code's approach as a case study.
+
+\begin{figure}[h]
+	\label{Claude-Agentic-Loop}
+	\includegraphics[width=\columnwidth]{agentic-loop.jpg}
+	\caption{Claude Code's prompt processing architecture \cite{claude}}
+\end{figure}
+
+When a developer prompts a Claude Code, the tool will start by gathering context of the problem. This involves analyzing the codebase for relevant symbols and classes that are needed to complete the required prompt. Then the tool will execute actions such as generating text or code. Lastly, because Claude has permissions to interact with the terminal, it will try to verify the results by either compiling the code, running the code and verifying any output produced by the program \cite{claude}.
+
+While not all developers directly allow GenAI tools to access their codebase, this is the most effective at producing responses as it is able to gather more information and test the generated content.
