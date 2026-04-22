@@ -32,9 +32,35 @@ $$
 This method is used for steps 2 and 3 in figure \ref{Gradient-Descent} as it will calculate the direction to move the weights and biases and move there. This process is repeated until the change in error between iterations is less than desired \cite{gradient-descent}. While this only adjusts the weights, there still needs to be a process of back-propagation. This involved finding which parameters affect the output the most and then adjusting the values to cover the edge cases left after the gradient descent is done \footnote{The math of this algorithm is more complex therefore it will not be explored in depth for this essay} \cite{backpropagation}.
 
 \subsection{Large Language Models}
-Large Language Models (LLMs) are models that are trained on natural and computer language in order to be able to generate an output based on verbal (text and/or audio) input. These models use the relationships encoded with machine learning to output next most likely word in the output.
+Large Language Models (LLMs) are models that are trained on natural and computer language in order to be able to generate an output based on verbal (text and/or audio) input. These models use the relationships encoded with machine learning to output next most likely word \cite{transformers}.
 
-% TODO: Left off here finishing this section using the 3b1b content
+\begin{figure}[h]
+	\includegraphics[width=\columnwidth]{word-vector-space.jpg}
+	\caption{Visuals of how the embedding matrices transform different words into different "word spaces"\cite{transformers}}
+	\label{Wordspace}
+\end{figure}
+
+When the user submits a prompt, the model will turn the prompt into tokens. Tokens are small chunks of the prompt that can be turned into vector values (each word being like a pixel in figure \ref{Neural-Network}). This is done with an embedding matrix, which describes the conversions between a token and their respective vector value. This vector value, like discussed in the machine learning section, represents a set of relationships be it about the word itself or the semantic context of the word \cite{transformers}.
+
+\begin{figure}[h]
+	\includegraphics[width=\columnwidth]{attent.jpg}
+	\caption{Visuals of how the attention block uses and represents context numerically \cite{transformers}}
+	\label{Attention}
+\end{figure}
+
+After that, each vector will affect each other to ensure that the context is taken into account, this is known as the attention block (see figure \ref{Attention}) \cite{transformers}.
+
+After finalizing the contextualized vectors, the model will then pass each vector separately through the layers of the neural network. This will result with a final vector like the one in figure \ref{Neural-Network}, but the vector will represent a scalar of how relevant the word is.
+
+\begin{figure}[h]
+	\includegraphics[width=\columnwidth]{howsoftmax.jpg}
+	\caption{How the scalar values are turned into a probability distribution \cite{transformers}}
+	\label{Softmax}
+\end{figure}
+
+As the scalars are not a probability, the procedure in figure \ref{Softmax} is performed. This then allows the model to pick either the most likely word with a bit of added randomization to mimic natural language \cite{transformers}.
+
+This process is conducted iteratively until the response is fully formed. The nice thing about this model is how it can turn the set of input tokens into a set of different parameters used to construct an output. While this example focused on generating text, this extends to code with the main difference being that the output vector is not composed of words or punctuation but symbols and langauge tokens (such as brackets or keywords) \cite{code-gen-ai}.
 
 \subsection{Architecture of GenAI coding tools}
 When utilizing generative AI in the context of a software project, there are additional considerations that must be met to meet the desired output. To better understand this fine tuning, this essay will focus on Claude Code's approach as a case study.
