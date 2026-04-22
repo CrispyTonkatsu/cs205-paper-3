@@ -1,4 +1,10 @@
 \section{Ethical Analysis}
+Given the broadness of the issue presented in the essay, this section will be split into the core issues presented in section of the same name.
+
+\subsection{Software Reliability}
+As discussed in the technical section, AI utilizes the relationship between the provided prompt and the relationships it can build with the data to generate the code snippet. There is a major issue in this generation process, it doesn't perform logical reasoning in order to ensure that the code is correct. Tools like Claude utilize the added knowledge of the database, compiler errors and program output to ensure the program performs what is desired. However, this poses a critical issue, there is no guarantee that the side effects that stem from the lines being executed (such as memory allocation, pointer dereferencint, etc) don't harm the project or the users. This can be seen in several cases where the models are not trained with code of the quality desired, which in turn leads to bugs \cite{ai-bugs-paper}.
+
+Given companies are utilizing GenAI to reduce costs, it is important to highlight there is a direct benefit stemming from this shift. Under Kantianism, this is reducing other's humanity in multiple ways. The
 
 \subsection{Kantianism}
 Under Kantianism, the biggest ethical concerns are:
