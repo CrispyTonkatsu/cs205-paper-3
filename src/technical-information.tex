@@ -65,7 +65,8 @@ This process is conducted iteratively until the response is fully formed. The ni
 \subsection{Architecture of GenAI coding tools}
 When utilizing generative AI in the context of a software project, there are additional considerations that must be met to meet the desired output. To better understand this fine tuning, this essay will focus on Claude Code's approach as a case study.
 
-% TODO: Briefly introduce Claude Code
+According to the Claude Code documentation:
+\say{Claude Code is an agentic coding tool that reads your codebase, edits files, runs commands, and integrates with your development tools. Available in your terminal, IDE, desktop app, and browser.}
 
 \begin{figure}[h]
 	\includegraphics[width=\columnwidth]{agentic-loop.jpg}
@@ -73,10 +74,4 @@ When utilizing generative AI in the context of a software project, there are add
 	\label{Claude-Agentic-Loop}
 \end{figure}
 
-% TODO: Be more specific and say it looks at all of the files that it is looking at
-
-When a developer prompts Claude Code, the tool will start by gathering context of the problem. This involves analyzing the codebase for relevant symbols and classes that are needed to complete the required prompt. Then the tool will execute actions such as generating text or code. Lastly, because Claude has permissions to interact with the terminal, it will try to verify the results by either compiling the code, running the code and verifying any output produced by the program \cite{claude}.
-
-While not all developers directly allow GenAI tools to access their codebase like in figure \ref{Claude-Agentic-Loop}, this is the most effective at producing responses as it is able to gather more information and test the generated content.
-
-% TODO: Expand more in how the text prompt turns into changes in the codebase
+When a developer prompts Claude Code, it will read all the files it is given access to (such as the git index, the other source files in the directory, etc.) for relevant symbols and information related to the prompt (Think about the attention block discussed in the previous sections). Then it will generate the code snippet and/or commands to run in the terminal to execute the prompt. This is done using process discussed in the previous section. Once the prompt output is generated, it is verified by compiling the program and running it and verifying the output matches the desired results \cite{claude}. This entire process can be interrupted by the developer as seen in figure \ref{Claude-Agentic-Loop}.
