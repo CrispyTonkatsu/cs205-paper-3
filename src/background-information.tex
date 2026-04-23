@@ -1,46 +1,47 @@
 \section{Core Issues}
 As discussed in the introduction, there are several concerns with the use of generative AI in software development:
 
-\subsection{Software reliability}
-One of the major issues that stems from using GenAI is the fact that GenAI doesn't \textit{reason} like humans do given its answer is generated via approximating using other good answers in the source. Programming is a task that requires discrete reasoning as the steps will directly relate to the next one in the solution \cite{reasoning-ai}. This causes several issues when it comes down to the reliability of the software being written with the help of GenAI \cite{code-correctness}:
-\begin{itemize}
-	\item{Mistakes might be missed when generating large amounts of code.}
-	\item{Engineers can't guarantee where the design patters that were used to generate the system.}
-	\item{Maintaining the systems will become more difficult over time as they were mainly written by GenAI as opposed to a human who had a stream of logic that was followed when designing the system.}
-\end{itemize}
+\subsection{Code correctness}
+One of the major issues that stems from using GenAI is the fact that GenAI doesn't \textit{reason} like humans do given its answer is generated via approximating using other good answers in the source. Programming is a task that requires discrete reasoning as the steps will directly relate to the next one in the solution \cite{reasoning-ai}. This causes several issues when it comes down to the reliability of the software being written with the help of GenAI \cite{code-correctness}.
 
-These issues are more prominent when the software with generated code has critical importance such as a pacemaker, airplane cruising modes, etc. This issue compounds with GenAI's tendency to "hallucinate" an answer as its model might have biases and over fitting which make the math converge to a wrong answer \cite{hallucinations-ibm}.
+According to a 2024 study conducted by the International University of Applied Sciences, the amount of code generated is about 97\% of the times executable. While this is a high rate, the issues start to stem from the correctness, where about 21\% of the generated lines of code were fully correct and about 18\% were able to be corrected minimally to achieve the desired result \cite{code-correctness}. While the methods of the study focused on smaller programs with simpler functionality, the risks of failure can be extrapolated to larger systems where the codebase is larger and more side effects need to be taken into account when submitting changes.
 
-\subsection{Dilution of knowledge}
+A production instance of code correctness not being up to par is Amazon's outages in 2026. The outage of major Amazon services was reported to be caused by a GenAI tool used for code. Repeated instances of this are being prevented by strengthening the guard rails present for change submissions, specially those that used GenAI in their development. However, it is important to highlight major services like Amazon Web Services (AWS) went down due to GenAI changes \cite{amazon-ai-guard-rails}. The issue here is not AWS being down but instead the clients of the service being collateral damage of such infrastructure failure without a clear accountability chain.
+
+As seen with AWS, substantial damage can be done to infrastructure even when there are senior engineers in the production process. The risks become more dangerous with issues like GenAI hallucination \cite{hallucinations-ibm} or the use of GenAI code in devices and systems that require critical safety such as biotechnology, embedded systems in transportation and more. In those cases, a model converging to the wrong answer can cost lives and without a clear accountability chain, it is difficult to enforce justice and repair damages. There are several issues with deciding how to hold accountability as mentioned in an article by IBM: \say{With the C-suite? With the whole team? If you have accountability that’s spread over the entire organization, everyone can’t end up in jail. Ultimately, shared accountability often leads to no accountability.} \cite{ibm-accountability}.
+
+\subsection{Damage to growth spaces for entry level engineers}
 Another major issue with GenAI for software engineering is the fact that they reduce the spaces where less experienced engineers build the knowledge to move forward. As stated before, GenAI doesn't reason and this is a similar issue with less experienced engineers, however, the key difference is that human engineers can improve with time and build up the discrete reasoning which allows them to construct correct programs that they haven't seen before. \cite{jobs-stack-overflow}
+
+As mentioned in an article by computer world, it is mentioned how Amazon cut around 14000 jobs because of the developments in GenAI technology allowing them to replace the humans with machines \cite{amazon-ai-layoffs}. This presents a major issue as there is still a need for engineers in the production pipeline, even more so when mistakes like the outages necessitating more human reviews of the submitted code \cite{amazon-ai-guard-rails}. This pattern is industry wide as there is a 25\% decrease in entry level tech job hiring and a decrease of about 30\% in internship positions \cite{jobs-stack-overflow}.
+
+In an blog post by Stack Overflow, the author discusses the importance of hiring entry level engineers as this facet of the tech industry is apprenticeship heavy given the complex systems that are being produced and maintained that are simply not available in an academic context. The article also concludes with the call to action to senior engineers and managers highlighting how there will be no other way to train entry level engineers beyond hiring them \cite{stack-overflow-junior-shortage}.
 
 \subsection{Displacement of people}
 This is a more general issue with the usage of GenAI but applies heavily to expensive tasks like generating the code for a complex program. The infrastructure that GenAI needs is costly in several resources \cite{electricity-use, water-use}:
 
 \begin{itemize}
-	\item{About 22\% power of all households in the US.}
+	\item{About 22\% of all electricity used by US households per year.}
 	\item{\say{Chan School of Public Health found that the carbon intensity of electricity used by data centers was 48\% higher than the US average.}}
-	\item{\say{Large data centers can consume up to 5 million gallons per day, equivalent to the water use of a town populated by 10,000 to 50,000 people.}}
+	\item{\say{Large data centers can consume up to 5 million gallons of water per day, equivalent to the water use of a town populated by 10,000 to 50,000 people.}}
 \end{itemize}
 
-Not only are data centers resource expensive, they also need a lot of space. This has caused local communities to be affected by the pollution and price increase of utilities. Not only that but there are cases where people lose the green areas of their community to a company who was able to buy out the land \cite{people-displacement}.
+In addition to the resource costs, data centers require space to be built. In the past year, there have been about 831 data centers built across the world to meet the GenAI demand. These sites have been constructed across the world \cite{construction-scaling}. While this will decrease resources available for communities where the centers are built, the data centers will affect communities in developing countries the most. This is due to companies concealing their identities to purchase the land, and in some cases, not needing to disclose the resources they will be consuming, such as Microsoft's license to exploit a well that has been overexploited in Mexico \cite{people-displacement}.
 
 \section{Stakeholders}
-With the core issues of GenAI out of the way, these are a possible classification of the different stakeholders in the situation (in order of least to most directly benefited):
 
-\begin{enumerate}
-	\item{General population in developing countries}
-	\item{General population in developed countries}
-	\item{Software engineers}
-	\item{Companies that use generative AI}
-	\item{Companies that make generative AI tools}
-\end{enumerate}
+% TODO: Left off here finishing the stakeholders
+
+\subsection{General Population}
+
+\subsection{Software engineers}
+
+\subsection{Companies that use generative AI}
+
+\subsection{Companies that make generative AI tools}
 
 \section{Current state of generative AI}
 With understanding of the costs of this technology it is also important to acknowledge its usage. By understanding the applications of the technology, it will be possible to weigh out the benefits and disadvantages of spending resources on this technology.
-
-\subsection{Vibe Coding}
-This no-code development experience differs from the professional world of software engineering where the tools are understood. This really doesn't have a major impact in the infrastructure of larger software but it does use all the same resources that other projects would use to improve their products \cite{vibe-coding}.
 
 \subsection{Usage in research}
 There's been a shift in academia to use more GenAI to speed up different elements of the research pipeline \cite{academia-ai}. A key project that will be mentioned in this essay is the usage to create the implementation for the ZOZO's (a Japanese clothing company) cloth physics solver \cite{ppf-solver, ppf-solver-whitepaper}.
@@ -49,5 +50,10 @@ There's been a shift in academia to use more GenAI to speed up different element
 In open source projects there is a current issue where the lead contributors are being swarmed by pull requests with low quality AI generated code \cite{open-source-bother}. This puts a strain in projects' ability to survive as the leads are often people who volunteer and don't have the time to go through all the low quality code to pick out and accept contributions to the project.
 
 \subsection{Usage in private companies}
-Across different companies, there are several philosophies, some are encouraging their developers to use it and needing to strengthen their code reviews \cite{amazon-ai} and other companies avoid it as they feel it damages the quality of their products \cite{nintendo-ai}.
+Across different companies, there are several philosophies, some companies are encouraging their developers to use GenAI and needing GenAI to strengthen the code review process \cite{amazon-ai} and other companies avoid using GenAI as they believe it damages the quality of their products \cite{nintendo-ai}.
 
+% TODO: Highlight more specific elements of the source
+
+% TODO: Yet again, more careful with pronouns, make sure it is not like you're writing in spanish
+
+% TODO: Expand more on the usage that there is by going into the sources and simply quoting how companies expect the usage to be done. This way it is clear why and how it works
