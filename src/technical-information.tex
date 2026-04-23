@@ -60,7 +60,7 @@ After finalizing the contextualized vectors, the model will then pass each vecto
 
 As the scalars are not a probability, the procedure in figure \ref{Softmax} is performed. This then allows the model to pick either the most likely word with a bit of added randomization to mimic natural language \cite{transformers}.
 
-This process is conducted iteratively until the response is fully formed. The nice thing about this model is how it can turn the set of input tokens into a set of different parameters used to construct an output. While this example focused on generating text, this extends to code with the main difference being that the output vector is not composed of words or punctuation but symbols and langauge tokens (such as brackets or keywords) \cite{code-gen-ai}.
+This process is conducted iteratively until the response is fully formed. The nice thing about this model is how it can turn the set of input tokens into a set of different parameters used to construct an output. While this example focused on generating text, this extends to code with the main difference being that the output vector is not composed of words or punctuation but symbols and language tokens (such as brackets or keywords) \cite{code-gen-ai}.
 
 \subsection{Architecture of GenAI coding tools}
 When utilizing generative AI in the context of a software project, there are additional considerations that must be met to meet the desired output. To better understand this fine tuning, this essay will focus on Claude Code's approach as a case study.

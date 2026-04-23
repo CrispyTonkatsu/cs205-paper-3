@@ -30,19 +30,19 @@ In addition to the resource costs, data centers require space to be built. In th
 
 \section{Stakeholders}
 
-% TODO: Left off here finishing the stakeholders
-
 \subsection{General Population}
+The general population is relevant to the usage of GenAI in software development as they are the customers of the products being made with GenAI support. Not only that but they are also the people getting affected most when a new AI compute center.
 
 \subsection{Software engineers}
+Software engineers are relevant to the situation as they are the people being encouraged to use the tool and being displaced by the implementation of the tool in the software production pipeline \cite{jobs-stack-overflow, google-ai-use}. This places software engineers in an interesting position as they might be the ones taking accountability for the mistakes of AI and future infrastructure suffers because of the displacement of entry level developers \cite{ibm-accountability, stack-overflow-junior-shortage}.
 
 \subsection{Companies that use generative AI}
+Companies that use GenAI are using a tool that has major risks such as Amazon's outages \cite{amazon-ai-guard-rails}. This is creates a conflict of interest, in cases like Google where they are the company developing the tool as well as selling it \cite{google-ai-use}. Additionally, for the client companies of the GenAI vendors, there is the documented issues from using GenAI in production \cite{ai-bugs-paper} as well as the lack of transparency of which products were made using GenAI for code generation (e.g. there is no specific reporting of the amount of AI generated code in products).
 
 \subsection{Companies that make generative AI tools}
+These companies benefit monetarily from the use and perceived success of GenAI tooling such as Claude Code, Google Gemini, etc. These companies are also responsible for transparency in the origin of the data used, the errors their tool might make and the data it will collect from the project \cite{microsoft-ai-future ,amazon-ai-guard-rails, claude}.
 
 \section{Current state of generative AI}
-With understanding of the costs of this technology it is also important to acknowledge its usage. By understanding the applications of the technology, it will be possible to weigh out the benefits and disadvantages of spending resources on this technology.
-
 \subsection{Usage in research}
 There's been a shift in academia to use more GenAI to speed up different elements of the research pipeline \cite{academia-ai}. A key project that will be mentioned in this essay is the usage to create the implementation for the ZOZO's (a Japanese clothing company) cloth physics solver \cite{ppf-solver, ppf-solver-whitepaper}.
 
@@ -50,10 +50,4 @@ There's been a shift in academia to use more GenAI to speed up different element
 In open source projects there is a current issue where the lead contributors are being swarmed by pull requests with low quality AI generated code \cite{open-source-bother}. This puts a strain in projects' ability to survive as the leads are often people who volunteer and don't have the time to go through all the low quality code to pick out and accept contributions to the project.
 
 \subsection{Usage in private companies}
-Across different companies, there are several philosophies, some companies are encouraging their developers to use GenAI and needing GenAI to strengthen the code review process \cite{amazon-ai} and other companies avoid using GenAI as they believe it damages the quality of their products \cite{nintendo-ai}.
-
-% TODO: Highlight more specific elements of the source
-
-% TODO: Yet again, more careful with pronouns, make sure it is not like you're writing in spanish
-
-% TODO: Expand more on the usage that there is by going into the sources and simply quoting how companies expect the usage to be done. This way it is clear why and how it works
+Across different companies, there are several philosophies, some companies are encouraging their developers to use GenAI and needing developers to strengthen the code review process \cite{amazon-ai, amazon-ai-layoffs} and other companies avoid using GenAI as they believe it damages the quality of their products \cite{nintendo-ai}.
